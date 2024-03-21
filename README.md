@@ -1,21 +1,8 @@
----
-title: chat-ui
-emoji: 🔥
-colorFrom: purple
-colorTo: purple
-sdk: docker
-pinned: false
-license: apache-2.0
-base_path: /chat
-app_port: 3000
-failure_strategy: rollback
----
-
-# Chat UI
-
-![Chat UI repository thumbnail](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/chatui-websearch.png)
-
-A chat interface using open source models, eg OpenAssistant or Llama. It is a SvelteKit app and it powers the [HuggingChat app on hf.co/chat](https://huggingface.co/chat).
+<div align="center">
+  <h1>Indic Chat</h1>
+  <img src="https://github.com/BhabhaAI/indic-chat-ui/assets/39311993/f874a687-660c-48ca-ac08-f69f975ff477" alt="Indic Chat Logo" width="400" height="400"/>
+  <p>Powering Indic models on <a target="_blank" href="https://www.indic.chat/"> Indic.Chat</a></p>
+</div>
 
 0. [No Setup Deploy](#no-setup-deploy)
 1. [Setup](#setup)
