@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_APP_NAME, PUBLIC_VERSION } from "$env/static/public";
+	import { PUBLIC_APP_NAME, PUBLIC_VERSION, PUBLIC_APP_ASSETS } from "$env/static/public";
 	import { PUBLIC_ANNOUNCEMENT_BANNERS } from "$env/static/public";
 	import { PUBLIC_APP_DESCRIPTION } from "$env/static/public";
 	import Logo from "$lib/components/icons/Logo.svelte";
@@ -81,8 +81,14 @@
 				>
 			</div>
 			<ModelCardMetadata variant="dark" model={currentModel} />
+			<a href="https://discord.gg/vGnMxJCcGm " target="_blank" rel="noopener noreferrer">
+				<img src="{base}/{PUBLIC_APP_ASSETS}/discord.webp" alt="Join Us On Discord" class="mt-2 bt-2 mx-auto h-8">
+			</a>
 		</div>
 	</div>
+	<!-- <div class="lg:col-span-3">
+
+	</div>	 -->
 	{#if currentModelMetadata.promptExamples}
 		<div class="lg:col-span-3 lg:mt-6">
 			<p class="mb-3 text-gray-600 dark:text-gray-300">Examples</p>
@@ -98,5 +104,6 @@
 				{/each}
 			</div>
 		</div>{/if}
+
 	<div class="h-40 sm:h-24" />
 </div>
