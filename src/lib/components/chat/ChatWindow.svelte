@@ -253,7 +253,17 @@
 				{/each}
 			</div>
 		{/if}
-
+		<div class="text-center mb-8">
+			<p class="text-lg font-semibold mb-2">Developed by Satpal</p>
+			<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+			  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+				X.com/SatpalPatawat
+			  </a>
+			  <a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
+				Linkedin.com/in/satpalsinghrathore/
+			  </a>
+			</div>
+		  </div>
 		<div class="w-full">
 			<div class="flex w-full pb-3">
 				{#if $page.data.settings?.searchEnabled && !assistant}
@@ -290,18 +300,7 @@
 						{/if}
 					</div>
 				{/if}
-			</div>
-			<div class="text-center mb-8">
-				<p class="text-lg font-semibold mb-2">Developed by Satpal</p>
-				<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-				  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
-					X.com/SatpalPatawat
-				  </a>
-				  <a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-600">
-					Linkedin.com/in/satpalsinghrathore/
-				  </a>
-				</div>
-			  </div>	
+			</div>	
 			<form
 				on:dragover={onDragOver}
 				on:dragenter={onDragEnter}
