@@ -27,7 +27,7 @@
 	const dispatch = createEventDispatcher<{ message: string }>();
 </script>
 
-<div class="my-auto grid gap-8 lg:grid-cols-3">
+<div class="my-auto grid gap-8 lg:grid-cols-3 pb-40">
 	<div class="lg:col-span-1">
 		<div>
 			<div class="mb-3 flex items-center text-2xl font-semibold space-x-14">
@@ -105,15 +105,16 @@
 			</div>
 		</div>{/if}
 
-		<div class="lg:col-span-3 text-center">
+		<div class="text-center lg:col-span-3">
 			<p class="text-lg font-semibold mb-2">Developed by Satpal</p>
 			<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-				<a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
-					Twitter
-				</a>
-				<a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
-					Linkedin
-				</a>
+			  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
+				Twitter
+			  </a>
+			  <a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
+				Linkedin
+			  </a>
 			</div>
-		</div>
+		  </div>
+
 </div>
