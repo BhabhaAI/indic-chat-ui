@@ -82,7 +82,7 @@
 			</div>
 			<ModelCardMetadata variant="dark" model={currentModel} />
 			<a href="https://discord.gg/vGnMxJCcGm " target="_blank" rel="noopener noreferrer">
-				<img src="{base}/{PUBLIC_APP_ASSETS}/discord.webp" alt="Join Us On Discord" class="mt-2 bt-2 mx-auto h-8">
+				<img src="{base}/{PUBLIC_APP_ASSETS}/discord.webp" alt="Join Us On Discord" class="mt-2 bt-2 mx-auto h-12">
 			</a>
 		</div>
 	</div>
@@ -105,5 +105,15 @@
 			</div>
 		</div>{/if}
 
-	<div class="h-40 sm:h-24" />
+		<div class="lg:col-span-3 text-center">
+			<p class="text-lg font-semibold mb-2">Developed by Satpal</p>
+			<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+				<a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
+					Twitter
+				</a>
+				<a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
+					Linkedin
+				</a>
+			</div>
+		</div>
 </div>
