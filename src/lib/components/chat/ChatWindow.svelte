@@ -50,6 +50,23 @@
 	let message: string;
 	let timeout: ReturnType<typeof setTimeout>;
 	let isSharedRecently = false;
+
+	// ......................
+
+	// I created the userLoggedIn variable to store whether the user is logged in or not if the user is not logged in then the submit button calls sign in popup else if will work as expected....
+
+	const userLoggedIn = false;
+	let showLoginModal = false;
+	function handleClick(event: any) {
+    event.preventDefault(); 
+    if (!userLoggedIn) {
+        showLoginModal = true;
+    }
+}
+
+
+	// ....................
+
 	$: $page.params.id && (isSharedRecently = false);
 
 	const dispatch = createEventDispatcher<{
@@ -335,14 +352,33 @@
 								<EosIconsLoading />
 							</div>
 						{:else}
-							<button
-								class="btn mx-1 my-1 h-[2.4rem] self-end rounded-lg bg-transparent p-1 px-[0.7rem] text-gray-400 disabled:opacity-60 enabled:hover:text-gray-700 dark:disabled:opacity-40 enabled:dark:hover:text-gray-100"
-								disabled={!message || isReadOnly}
-								type="submit"
-							>
-								<CarbonSendAltFilled />
-							</button>
-						{/if}
+
+<!-- .................................................................................. -->
+
+{#if userLoggedIn}
+<button
+	class="btn mx-1 my-1 h-[2.4rem] self-end rounded-lg bg-transparent p-1 px-[0.7rem] text-gray-400 disabled:opacity-60 enabled:hover:text-gray-700 dark:disabled:opacity-40 enabled:dark:hover:text-gray-100"
+	disabled={!message || isReadOnly}
+	type="submit"
+>
+	<CarbonSendAltFilled />
+</button>
+{:else}
+<button
+	on:click={handleClick}
+	class="btn mx-1 my-1 h-[2.4rem] self-end rounded-lg bg-transparent p-1 px-[0.7rem] text-gray-400 disabled:opacity-60 enabled:hover:text-gray-700 dark:disabled:opacity-40 enabled:dark:hover:text-gray-100"
+	disabled={!message || isReadOnly}
+	type="submit"
+>
+	<CarbonSendAltFilled />
+</button>
+{/if}
+{#if showLoginModal}
+<LoginModal />
+{/if}
+
+<!-- ................................................................... -->
+{/if}
 					</div>
 				{/if}
 			</form>
@@ -384,3 +420,27 @@
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
