@@ -21,4 +21,4 @@ For now (March 2024), it's running:
 
 ## Technical details
 
-The code of this application is open-source on [BhabhaAi/indic-chat-ui GitHub repo](https://github.com/BhabhaAI/indic-chat-ui).
+The code of this application is open-source on [BhabhaAI/indic-chat-ui GitHub repo](https://github.com/BhabhaAI/indic-chat-ui).
