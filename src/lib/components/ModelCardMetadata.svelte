@@ -23,6 +23,13 @@
 		Model
 		<div class="max-sm:hidden">&nbsp;page</div></a
 	>
+	<a
+		href="/sponsor"
+		class="flex items-center hover:underline"
+		target="_blank"
+		rel="noreferrer"
+		><CarbonArrowUpRight class="mr-1.5 shrink-0 text-xs text-gray-400" /> Become a sponsor
+	</a>
 	{#if model.datasetName || model.datasetUrl}
 		<a
 			href={model.datasetUrl || "https://huggingface.co/datasets/" + model.datasetName}
