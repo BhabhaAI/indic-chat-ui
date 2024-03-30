@@ -12,6 +12,7 @@
 	import { base } from "$app/paths";
 	import { useSettingsStore } from "$lib/stores/settings";
 	import JSON5 from "json5";
+	import ta from "date-fns/locale/ta";
 
 	export let currentModel: Model;
 	export let models: Model[];
@@ -61,7 +62,7 @@
 			<div class="flex p-3">
 				<div>
 					<div class="text-sm text-gray-600 dark:text-gray-400">Current Model</div>
-					<div class="flex items-center gap-1.5 font-semibold max-sm:text-smd">
+					<div class="flex items-center gap-1.5 font-semibold max-sm:text-smd mt-2">
 						{#if currentModel.logoUrl}
 							<img
 								class=" overflown aspect-square size-4 rounded border dark:border-gray-700"
@@ -81,9 +82,28 @@
 				>
 			</div>
 			<ModelCardMetadata variant="dark" model={currentModel} />
-			<a href="https://discord.gg/vGnMxJCcGm " target="_blank" rel="noopener noreferrer">
-				<img src="{base}/{PUBLIC_APP_ASSETS}/discord.webp" alt="Join Us On Discord" class="mt-2 bt-2 mx-auto h-12">
-			</a>
+			<div class="flex flex-col md:flex-row py-2">
+				<div class="flex-1 mb-4 md:mb-0">
+				  <a href="https://discord.gg/vGnMxJCcGm" target="_blank" rel="noopener noreferrer">
+					<img src="{base}/{PUBLIC_APP_ASSETS}/discord.webp" alt="Join Us On Discord" class="mt-2 bt-2 mx-auto h-12">
+				  </a>
+				</div>
+				<div class="flex-1">
+				  <h4 class="text-center">Developed by Satpal</h4>
+				  <div class="flex flex-row justify-center">
+					<div class="mr-4">
+					  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer">
+						<img src="{base}/{PUBLIC_APP_ASSETS}/X_icon.svg" alt="Twitter" class="mt-2 bt-2 mx-auto h-6">
+					  </a>
+					</div>
+					<div>
+					  <a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer">
+						<img src="{base}/{PUBLIC_APP_ASSETS}/LinkedIn.webp" alt="LinkedIn" class="mt-2 bt-2 mx-auto h-6">
+					  </a>
+					</div>
+				  </div>
+				</div>
+			  </div>
 		</div>
 	</div>
 	<!-- <div class="lg:col-span-3">
@@ -106,13 +126,13 @@
 		</div>{/if}
 
 		<div class="text-center lg:col-span-3">
-			<p class="text-lg font-semibold mb-2">Developed by Satpal</p>
-			<div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-			  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
-				Twitter
+			<p class="text-lg font-semibold mb-2">Sponsors</p>
+			<div class="flex flex-wrap justify-center items-center">
+			  <a href="https://huggingface.co/Telugu-LLM-Labs" target="_blank" class="mx-4 my-2 block">
+				<img src="{base}/{PUBLIC_APP_ASSETS}/Telugu_LLM_Labs.webp" alt="Sponsor Logo 1" class="h-12">
 			  </a>
-			  <a href="https://www.linkedin.com/in/satpalsinghrathore/" target="_blank" rel="noopener noreferrer" class="inline-block text-blue-500 font-bold py-2 px-4">
-				Linkedin
+			  <a href="https://huggingface.co/BhabhaAI" target="_blank" class="mx-4 my-2 block">
+				<img src="{base}/{PUBLIC_APP_ASSETS}/Bhabha_AI.webp" alt="Sponsor Logo 1" class="h-8">
 			  </a>
 			</div>
 		  </div>
