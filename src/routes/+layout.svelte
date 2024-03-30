@@ -24,7 +24,7 @@
 	import NavMenu from "$lib/components/NavMenu.svelte";
 	import MobileNav from "$lib/components/MobileNav.svelte";
 	import titleUpdate from "$lib/stores/titleUpdate";
-	import DisclaimerModal from "$lib/components/DisclaimerModal.svelte";
+	// import DisclaimerModal from "$lib/components/DisclaimerModal.svelte";
 	import ExpandNavigation from "$lib/components/ExpandNavigation.svelte";
 
 	export let data;
@@ -177,10 +177,10 @@
 		></script>
 	{/if}
 </svelte:head>
-
+<!-- 
 {#if !$settings.ethicsModalAccepted && $page.url.pathname !== `${base}/privacy`}
 	<DisclaimerModal />
-{/if}
+{/if} -->
 
 <ExpandNavigation
 	isCollapsed={isNavCollapsed}
