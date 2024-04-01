@@ -134,9 +134,9 @@
 
 <svelte:head>
 	<title>{PUBLIC_APP_NAME}</title>
-	<meta name="description" content="The first open source alternative to ChatGPT. 💪" />
+	<meta name="description" content="Try out the best open source Indic chat models." />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@huggingface" />
+	<meta name="twitter:site" content="@SatpalPatawat" />
 
 	<!-- use those meta tags everywhere except on the share assistant page -->
 	<!-- feel free to refacto if there's a better way -->

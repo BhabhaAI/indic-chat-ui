@@ -6,17 +6,17 @@
 	"start_url": "/chat",
 	"icons": [
 		{
-			"src": "/chat/indicchat/icon-128x128.png",
+			"src": "/indicchat/icon-128x128.png",
 			"sizes": "128x128",
 			"type": "image/png"
 		},
 		{
-			"src": "/chat/indicchat/icon-256x256.png",
+			"src": "/indicchat/icon-256x256.png",
 			"sizes": "256x256",
 			"type": "image/png"
 		},
 		{
-			"src": "/chat/indicchat/icon-512x512.png",
+			"src": "/indicchat/icon-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png"
 		}
