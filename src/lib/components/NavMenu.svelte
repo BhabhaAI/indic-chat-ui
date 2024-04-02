@@ -48,7 +48,7 @@
 
 <div class="sticky top-0 flex flex-none items-center justify-between px-3 py-3.5 max-sm:pt-0">
 	<a class="flex items-center rounded-xl text-lg font-semibold" href="{PUBLIC_ORIGIN}{base}/">
-		<Logo classNames="mr-1" />
+		<Logo classNames="mr-1 w-10 h-10 dark:fill-[#101927] fill-white" />
 		{PUBLIC_APP_NAME}
 	</a>
 	<a

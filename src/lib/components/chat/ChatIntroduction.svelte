@@ -33,7 +33,7 @@
 		<div>
 			<div class="mb-3 flex items-center text-2xl font-semibold space-x-14">
 				<div class="flex items-center sm:mr-8">
-                    <Logo classNames="mr-2 flex-none" size="large"/>
+                    <Logo classNames="mr-2 w-20 h-20 dark:fill-[#101927] fill-white" size="large"/>
                     <span class="whitespace-nowrap">{PUBLIC_APP_NAME}</span>
                 </div>
 				<div
@@ -93,7 +93,7 @@
 				  <div class="flex flex-row justify-center">
 					<div class="mr-4">
 					  <a href="https://twitter.com/SatpalPatawat" target="_blank" rel="noopener noreferrer">
-						<img src="{base}/{PUBLIC_APP_ASSETS}/X_icon.svg" alt="Twitter" class="mt-2 bt-2 mx-auto h-6">
+						<img src="{base}/{PUBLIC_APP_ASSETS}/twitter.png" alt="Twitter" class="mt-2 bt-2 fill-white  mx-auto h-6">
 					  </a>
 					</div>
 					<div>
