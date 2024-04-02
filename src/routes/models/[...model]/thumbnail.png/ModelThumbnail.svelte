@@ -5,7 +5,7 @@
 	export let name: string;
 	export let logoUrl: string | undefined;
 
-	import logo from "../../../../../static/huggingchat/logo.svg?raw";
+	import logo from "../../../../../static/indicchat/logo.svg?raw";
 </script>
 
 <div class=" flex h-[648px] w-full flex-col items-center bg-white">
